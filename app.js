@@ -11,12 +11,12 @@ const path = require("path")
 //newly created object
 const app = express()
 
-//Routes HTTP GET requests to the specified path with the specified
-//callback functions.
+//Routes HTTP GET requests to the uri with the specified
+//callback function.
 app.get('/', function(request, response){
 
-  //using the express sendFile method to transfer at the given path
-  //the file into a HTTP request
+  //using the express sendFile method to transfer
+  //the file at the given path into a HTTP request
   response.sendFile(path.join(__dirname+'/views/index.html'))
 })
 
