@@ -1,0 +1,24 @@
+{
+  "name": "tmdb-drop-down",
+  "version": "1.0.0",
+  "description": "Search box which comes up with suggestions as the user is typing",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morelme/TMDB-drop-down.git"
+  },
+  "author": "Melissa Morel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morelme/TMDB-drop-down/issues"
+  },
+  "homepage": "https://github.com/morelme/TMDB-drop-down#readme",
+  "dependencies": {
+    "express": "^4.15.0",
+    "nodemon": "^1.11.0"
+  }
+}
