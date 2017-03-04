@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./main.js"></script>
   <title>Incremental Search</title>
 </head>
 <body>
   <p>This is an incremental search of The Movie Database</p>
   <form method="POST" action="/titleSearch">
-    <input type="text" name="movieSearch" id="" placeholder="Search for movie by title">
-    <button>Submit</button>
+    <input type="text" name="movieSearch" id="movie-search-field" placeholder="Search for movie by title">
+    <button id="movie-submit-button" type="submit">Submit</button>
   </form>
+  <ul id="movies">
+  </ul>
+  <div id='hunger'></div>
 </body>
 </html>

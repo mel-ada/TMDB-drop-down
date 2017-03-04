@@ -25,6 +25,8 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 
+app.use(express.static(path.join(__dirname+'/javascripts')))
+
 //Routes HTTP GET requests to the uri with the specified
 //callback function.
 app.get('/', function(request, response){

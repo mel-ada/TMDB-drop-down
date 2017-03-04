@@ -8,9 +8,11 @@ const express = require('express')
 const router = express.Router()
 
 router.post('/titleSearch', function(request, response){
-//debouncing - trigger request after certain time (100 miliseconds) of pause in typing
-  console.log("request", request.body.movieSearch)
-  response.json("hi")
+  rp(movieSite)
+  .then(function(results) {
+    console.log('results', results);
+    response.body.movieSearch
+  })
 })
 
 module.exports = router
